@@ -5,6 +5,12 @@
   "author": "adrianba",
   "private": true,
   "dependencies": {
-    "whacko": "^0.19.1"
-  }
+    "whacko": "^0.19.1",
+    "snyk": "^1.88.0"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "snyk": true
 }
